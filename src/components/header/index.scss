@@ -1,0 +1,14 @@
+@use '../../sass/variables' as *;
+
+.header{
+    background-color: $nav-color ;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+
+    img{
+        padding-bottom: 1rem;
+    }
+}

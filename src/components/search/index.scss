@@ -1,0 +1,55 @@
+@use '../../sass/variables' as *;
+
+.search{
+    display: flex;
+    margin: 2.5rem 0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    
+    #lupa{
+        position: absolute;
+        left: 1rem;
+    }
+
+    &__icons{
+        display: flex;
+        img{
+            padding-left: 1rem;
+            width: 2.5rem;
+            cursor: pointer;
+        }
+    }
+    
+    &__inputContainer{
+        display: flex;
+        position: relative;
+        align-items: center;
+        border: 1px solid $input-border-color;
+        border-radius: 20px;
+        width: 78%;
+        height: 3rem;
+    }
+
+    input{
+        width: 92%;
+        margin-left: 2.9rem;
+        padding-right: 0.6rem;
+        border-radius: 15px;
+        font-size: 20px;
+        color: rgb(104, 104, 104);
+        
+        &:focus{
+            outline: 0;
+        }
+    }
+
+    img{
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width:768px) {
+        margin: 1.5rem 0;
+        padding: 0 1rem;
+    }
+}

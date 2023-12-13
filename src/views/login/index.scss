@@ -1,0 +1,63 @@
+@use '../../sass/variables' as *;
+
+.login{
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    
+    .container{
+        text-align: center;
+        
+
+        p{
+            margin-top: 10px;
+        }
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    label{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: start;
+    }
+    
+    input{
+        width: 100%;
+        border: 1px solid $input-border-color ;
+        border-radius: 10px;
+        padding: 0.8rem 1rem;
+    }
+
+    button{
+        background-color: $caract-color;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 2rem;
+        padding: 0.8rem 1rem;
+        cursor: pointer;
+        color: aliceblue;
+    }
+    
+    button:hover{
+        background-color: $button-hover;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container{
+            padding: 0 2rem;
+        }
+        
+        h1{
+            font-size: 1.2rem;
+        }
+        
+    }
+}

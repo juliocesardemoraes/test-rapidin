@@ -1,0 +1,144 @@
+@use '../../sass/variables' as *;
+
+.payment{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 6%;
+    margin-bottom: 9rem;
+    margin-top: 110px;
+    position: relative;
+    
+    
+    &__left{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            font-size: 30px;
+            color: #323232;
+            font-weight: 300;
+            margin-bottom: 4px;
+        }
+
+        button{
+            background-color: $caract-color;
+            cursor: pointer;
+            width: 70vw;
+            height: 38px;
+            border-radius: 6px;
+            color: aliceblue;
+            font-weight: bolder;
+            position: absolute;
+            bottom: -5rem;
+            right: 0;
+            left: 0;
+            display: block;
+            margin: auto;
+        }
+        button:hover{
+            background-color: $button-hover;
+        }
+    }
+    
+    &__input{
+        &-text{
+            width: 100%;
+            border: 1px solid $input-border-color;
+            height: 42px;
+            padding-left: 15px;
+            border-radius: 10px;
+            margin-bottom: 47px;
+        }
+
+        &-radio{
+            margin-top: 10px;
+        }
+    }
+
+    &__line{
+        width: 100%;
+        border: 1px solid #D9D9D9;
+        text-align: center;
+        margin: auto;
+    }
+
+    &__total{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 2rem;
+        border: 1px solid #00000040;
+        padding: 20px 40px;
+        background-color: #EEEEEE33;
+        box-shadow: 0px 2px #00000040;
+
+        h2{
+            font-size: 26px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 21px;
+            
+        }
+        h3{
+            font-size: 23px;
+        }
+        
+        &-div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+    }
+
+    span{
+        padding-left: 10px;
+        font-size: 19px;
+        position: relative;
+        bottom: 8px;
+        display: inline-block;
+        color: #616161;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    input[type='radio']{
+        width: 20px;
+        height: 30px;
+        display: inline-block;
+    }
+
+
+    @media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+
+        label{
+            font-size: 1.5rem;
+        }
+
+        input{
+            width: 100%;
+        }
+
+        button{
+            width: 100%;
+        }
+
+
+        &__total{
+            width: 100%;
+            padding: 1rem 1rem;
+            margin-bottom: 3rem;
+            margin-left: 0;
+        }
+    }
+}
